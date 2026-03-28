@@ -358,6 +358,33 @@ export default function HeroSection() {
           >
             더 알아보기
           </button>
+          <button
+            style={{
+              padding: '14px 32px',
+              borderRadius: 12,
+              border: '1px solid rgba(0,212,255,0.4)',
+              background: 'rgba(0,212,255,0.08)',
+              backdropFilter: 'blur(10px)',
+              color: 'rgba(150,230,255,0.9)',
+              fontSize: 15,
+              fontWeight: 600,
+              cursor: 'pointer',
+              letterSpacing: 0.5,
+              transition: 'all 0.2s ease',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = 'rgba(0,212,255,0.18)';
+              e.currentTarget.style.borderColor = 'rgba(0,212,255,0.7)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = 'rgba(0,212,255,0.08)';
+              e.currentTarget.style.borderColor = 'rgba(0,212,255,0.4)';
+              e.currentTarget.style.transform = 'none';
+            }}
+          >
+            티칭 시작하기
+          </button>
         </div>
 
         {/* Stats row */}
