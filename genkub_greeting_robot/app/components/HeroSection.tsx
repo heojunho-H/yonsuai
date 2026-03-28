@@ -1,9 +1,7 @@
 'use client';
 
-import dynamic from 'next/dynamic';
+import Spline from '@splinetool/react-spline/next';
 import { useRef, useEffect, useState } from 'react';
-
-const Spline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
 
 /* ── tiny particle dot ── */
 function Particle({ style }: { style: React.CSSProperties }) {
