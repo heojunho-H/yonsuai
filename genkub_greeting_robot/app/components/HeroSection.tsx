@@ -134,7 +134,6 @@ export default function HeroSection() {
           transform: `translate(${mousePos.x * 0.4}px, calc(-50% + ${mousePos.y * 0.3}px))`,
           width: '65%',
           height: '100%',
-          transition: 'transform 0.15s ease-out',
           zIndex: 1,
           opacity: loaded ? 1 : 0,
           transition: 'opacity 1s ease, transform 0.15s ease-out',
